@@ -11,7 +11,6 @@
                 <router-link :to="item.href" tag="span" v-for="(item,index) in crumbs" :key="index" v-if="!item.isShow">{{item.text}}</router-link>
             </div>
             <div class="header-avator-con">
-                <lock-screen></lock-screen>
             </div>
             <keep-alive>
                 <router-view class="router-show-box"></router-view>
@@ -20,12 +19,7 @@
     </div>    
 </template>    
 <script>
-    import lockScreen from '../components/lockscreen.vue'; 
-    import Cookies from 'js-cookie';
     export default {
-        components:{
-            lockScreen
-        },
         data(){
             return{
                 lists:[{
@@ -40,6 +34,9 @@
                 },{
                     text: '图表',
                     href: '/index/echarts',
+                },{
+                    text: '案例',
+                    href: '/index/demo',
                 }],
                 crumbs:[],
 			    cunrenIndex:0,

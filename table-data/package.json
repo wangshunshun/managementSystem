@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A Vue.js project",
   "author": "wangshunshun <600630@syswin.com>",
+  "main": "dist/vue.runtime.common.js",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
@@ -10,16 +11,21 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "css-loader": "^0.28.11",
+    "echarts": "^4.1.0",
     "element-ui": "^2.3.9",
-    "iview": "^2.14.0-rc.3",
-    "iview-area": "^1.5.14",
+    "iview": "^2.14.0",
+    "iview-area": "^1.5.17",
     "js-cookie": "^2.2.0",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
     "sortable": "^2.0.0",
     "sortablejs": "^1.7.0",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-progressbar": "^0.7.5",
+    "vue-router": "^3.0.1",
+    "vue-style-loader": "^3.1.2"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
