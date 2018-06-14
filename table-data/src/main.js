@@ -10,9 +10,12 @@ import './assets/lib/pc-common.css'
 import './assets/css/commond.css'
 import iView from 'iview';
 import 'iview/dist/styles/iview.css';
+import cascaderMulti from 'cascader-multi';
+import iviewArea from 'iview-area';
 Vue.config.productionTip = false
 Vue.use(iView);
-
+Vue.use(cascaderMulti);
+Vue.use(iviewArea);
 
 /* eslint-disable no-new */
 new Vue({

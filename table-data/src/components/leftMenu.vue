@@ -37,6 +37,9 @@
                 },{
                     text: '案例',
                     href: '/index/demo',
+                },{
+                    text: '拖拽表单控件',
+                    href: '/index/form',
                 }],
                 crumbs:[],
 			    cunrenIndex:0,

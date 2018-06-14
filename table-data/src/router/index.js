@@ -6,6 +6,7 @@ import workFlow from '../view/form/work-flow.vue'
 import areaLinkage from '../view/area-linkage/area-linkage.vue'
 import echarts from '../view/echarts/echarts.vue'
 import demo from '../view/demo/demo.vue'
+import form from '../view/formDate/form.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -38,6 +39,10 @@ export default new Router({
                 name: '案例',
                 path: 'demo',
                 component: demo,
+            }, {
+                name: '拖拽表单控件',
+                path: 'form',
+                component: form,
             }]
         }
     ]
